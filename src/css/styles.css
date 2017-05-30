@@ -1,0 +1,214 @@
+.container {
+	width: 1900px;
+	margin: 0 auto;
+}
+a {
+	display: inline;
+}
+
+/*---------Main header section------------*/
+
+.main-header {
+	background: url(../img/main_header_bg.png);
+	height: 750px;
+	position: relative;
+}
+.header-top {
+	width: 1170px;
+	height: 100px;
+    left: 50%;
+    transform: translate( -50%);
+    position: relative;
+}
+.header-top ul {
+	float: right;
+	text-transform: uppercase;
+}
+.header-top li {
+	display: table-cell;
+	line-height: 100px;
+	display: inline-flex;
+	padding-left: 62px;
+}
+.header-top a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+.header-top-text {
+	position: absolute;
+	height: 370px;
+	width: 970px;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 70px;
+}
+.header-top-text h1 {
+	color: #fff;
+	font-size: 65px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	line-height: 82px;
+	text-transform: uppercase;
+}
+.header-top-text p {
+	color: #fff;
+	font-size: 22px;
+	font-family: 'Raleway', sans-serif;
+	line-height: 38px;
+	margin: 0 40px 0 40px;
+} 
+.header-top:after {
+	content:'';
+	border-bottom: solid 1px #505369;
+	width: 100%;
+	display: inline-block;
+}
+.find-out-more-button {
+	position: absolute;
+	text-decoration: none;
+	color: #fff;
+	width: 200px;
+	border: round ;
+	background: #e84545;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 50px;
+	left: 50%;
+	transform: translate( -50%);
+	margin-top: 50px;
+}
+
+/*---------Advantage List------------*/
+
+.advantages-list {
+	height: 695px;
+	background: #fff;
+	position: relative;
+}
+.advantages-text {
+	height: 450px;
+	width: 1085px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.advantages-text ul {
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+}
+.advantages-text li{
+	display: table-cell;
+	float: left;
+}
+
+/*---------Works Presentations------------*/
+
+.works-presentation {
+	height: 701px;
+	background: #fff;
+	display: inline-block;
+	margin-left: 4px;
+}
+.works-presentation ul {
+	margin: 0 auto;
+}
+.works-presentation li {
+	float: left;
+	margin: 0 2px 2px 2px;
+}
+.second-list li {
+	margin: 2px 2px 0px 2px;
+}
+.works-presentation li:first-child {
+	width: 469px;
+	height: 350px;
+	background: url(../img/work_1_bg.png);
+}
+.works-presentation li:nth-child(2) {
+	width: 469px;
+	height: 350px;
+	background: url(../img/work_2_bg.png);
+} 
+.works-presentation li:nth-child(3) {
+	width: 469px;
+	height: 350px;
+	background: url(../img/work_3_bg.png);
+}
+.works-presentation li:nth-child(4) {
+	width: 469px;
+	height: 350px;
+	background: url(../img/work_4_bg.png);	
+}
+.second-list li:first-child {
+	width: 469px;
+	height: 350px;
+	background: url(../img/work_5_bg.png);	
+}
+.second-list li:nth-child(2) {
+	width: 469px;
+	height: 350px;
+	background: url(../img/work_6_bg.png);	
+}
+.second-list li:nth-child(3) {
+	width: 469px;
+	height: 350px;
+	background: url(../img/work_7_bg.png);	
+}
+.second-list li:nth-child(4) {
+	width: 469px;
+	height: 350px;
+	background: url(../img/work_8_bg.png);	
+}
+
+/*---------Authors List------------*/
+
+.authors-list {
+	height: 785px;
+	background: green;
+}
+
+/*---------Clients------------*/
+
+.clients {
+	height: 500px;
+	position: relative;
+	background: #53354a;
+}
+.clients-first-part {
+	width: 950px;
+	background: url(../img/clients_bg.png);
+	height: 500px;
+	position: absolute;
+	float: left;
+}
+
+/*---------Download Info------------*/
+
+.download-info {
+	height: 350px;
+	background: #fff;
+}
+
+/*---------Information Division------------*/
+
+.information-division {
+	height: 250px;
+	background: #3a3e64;
+}
+
+/*---------Footer------------*/
+
+.footer {
+	height: 95px;
+	background: #313454;
+}
