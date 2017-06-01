@@ -5,6 +5,10 @@
 a {
 	display: inline;
 }
+.inner-container {
+	width: 970px;
+	margin: 0 auto;
+}
 
 /*---------Main header section------------*/
 
@@ -18,17 +22,28 @@ a {
 	height: 100px;
     left: 50%;
     transform: translate( -50%);
-    position: relative;
+    position: absolute;
+    border-bottom: solid 1px #505369;
+    display: block;
+}
+.header-content {
+	position: relative;
+	top: 40%;
+}
+.header-top img {
+	float: left;
 }
 .header-top ul {
 	float: right;
 	text-transform: uppercase;
+	position: relative;
 }
 .header-top li {
-	display: table-cell;
-	line-height: 100px;
 	display: inline-flex;
-	padding-left: 62px;
+	padding-right: 62px;
+}
+.header-top li:last-child {
+	padding-right: 0px;
 }
 .header-top a {
 	text-decoration: none;
@@ -40,7 +55,6 @@ a {
 .header-top-text {
 	position: absolute;
 	height: 370px;
-	width: 970px;
 	top: 50%;
 	left: 50%;
     transform: translate(-50%, -50%);
@@ -62,12 +76,6 @@ a {
 	line-height: 38px;
 	margin: 0 40px 0 40px;
 } 
-.header-top:after {
-	content:'';
-	border-bottom: solid 1px #505369;
-	width: 100%;
-	display: inline-block;
-}
 .find-out-more-button {
 	position: absolute;
 	text-decoration: none;
@@ -105,76 +113,131 @@ a {
 .advantages-text ul {
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
+	position: relative;
+	display: inline-flex;
+	left: 50%;
+	transform: translate(-50%);
+}
+.second-list {
+	margin-bottom: 0
 }
 .advantages-text li{
 	display: table-cell;
 	float: left;
+	width: 305px;
+	text-align: center;
+	margin: 0 45px 75px 45px;
+}
+.advantages-text h4 {
+	font-weight: bold;
+	padding: 25px 0 25px 0;
+}
+.advantages-text p {
+	line-height: 18px;
 }
 
 /*---------Works Presentations------------*/
 
 .works-presentation {
-	height: 701px;
+	position: relative;
+	height: 700px;
 	background: #fff;
 	display: inline-block;
-	margin-left: 4px;
+	margin: 0 auto;
+	width: 100%;
 }
 .works-presentation ul {
-	margin: 0 auto;
+
 }
 .works-presentation li {
 	float: left;
-	margin: 0 2px 2px 2px;
-}
-.second-list li {
-	margin: 2px 2px 0px 2px;
+	display: flex;
 }
 .works-presentation li:first-child {
-	width: 469px;
+	width: 475px;
 	height: 350px;
 	background: url(../img/work_1_bg.png);
+	
 }
 .works-presentation li:nth-child(2) {
-	width: 469px;
+	width: 475px;
 	height: 350px;
 	background: url(../img/work_2_bg.png);
 } 
 .works-presentation li:nth-child(3) {
-	width: 469px;
+	width: 475px;
 	height: 350px;
 	background: url(../img/work_3_bg.png);
 }
 .works-presentation li:nth-child(4) {
-	width: 469px;
+	width: 475px;
 	height: 350px;
-	background: url(../img/work_4_bg.png);	
+	background: url(../img/work_4_bg.png);
 }
 .second-list li:first-child {
-	width: 469px;
+	width: 475px;
 	height: 350px;
-	background: url(../img/work_5_bg.png);	
+	background: url(../img/work_5_bg.png);
 }
 .second-list li:nth-child(2) {
-	width: 469px;
+	width: 475px;
 	height: 350px;
-	background: url(../img/work_6_bg.png);	
+	background: url(../img/work_6_bg.png);
 }
 .second-list li:nth-child(3) {
-	width: 469px;
+	width: 475px;
 	height: 350px;
-	background: url(../img/work_7_bg.png);	
+	background: url(../img/work_7_bg.png);
 }
 .second-list li:nth-child(4) {
-	width: 469px;
+	width: 475px;
 	height: 350px;
-	background: url(../img/work_8_bg.png);	
+	background: url(../img/work_8_bg.png);
 }
+
+/*---------presentations hover on graphics--------------*/
+
+.hover-text {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.hover-text p {
+	position: absolute;
+	display: block;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	font-size: 70px;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 350px;
+}
+.hover-text a {
+	width:100%;
+    height:100%;
+    text-decoration: none;
+    transition: 0.5s ease-out;
+}
+.hover-text a p {
+	display: none;
+}
+.hover-text a:hover p {
+    display: block;
+}
+.hover-text a:hover {
+	transition: 0.5s ease-in;
+	background: rgba(0,0,0,.5);
+}
+
 
 /*---------Authors List------------*/
 
 .authors-list {
 	height: 785px;
-	background: green;
+	background: #fff;
 }
 
 /*---------Clients------------*/
