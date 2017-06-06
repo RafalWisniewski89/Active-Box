@@ -232,16 +232,45 @@ a {
 /*---------Clients------------*/
 
 .clients {
+	display: block;
 	height: 500px;
 	position: relative;
 	background: #53354a;
 }
 .clients-first-part {
-	width: 950px;
-	background: url(../img/clients_bg.png);
+	width: 50%;
 	height: 500px;
 	position: absolute;
 	float: left;
+}
+.clients-first-part img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.clients-second-part {
+	display: block;
+	float: right;
+	width: 50%;
+}
+.clients-second-part-text {
+	content: open-quote;
+	color: #fff;
+	padding-left: 40px;
+}
+.clients-second-part-text h2 {
+	font-size: 36px;
+	font-family: 'Cardo', serif;
+	font-style: italic;
+	padding-top: 110px;
+	padding-right: 360px;
+	padding-bottom: 30px;
+}
+
+.clients-second-part-text p {
+	font-size: 13px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
 }
 
 /*---------Download Info------------*/
@@ -249,6 +278,23 @@ a {
 .download-info {
 	height: 350px;
 	background: #fff;
+	width: 100%;
+}
+.download-info-text {
+	display: block;
+	text-align: center;
+	padding-top: 100px;
+}
+.download-info-text h2 {
+	font-size: 28px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	line-height: 42px;
+}
+.download-info-text p {
+	font-size: 13px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
 }
 
 /*---------Information Division------------*/
@@ -256,11 +302,49 @@ a {
 .information-division {
 	height: 250px;
 	background: #3a3e64;
+
 }
+.information-list {
+	position: relative;
+	width: 1700px;
+	margin: 0 auto;
+	display: flex;
+}
+.information-list ul {
+	margin-top: 70px;
+	
+}
+.information-list li {
+	float: left;
+	padding: 0 20px 0 20px;
+	width: 380px;
+	text-align: center;
+
+}
+.information-list h2 {
+	color: #fff;
+}
+.information-list p {
+	color: #757893;
+}
+
 
 /*---------Footer------------*/
 
 .footer {
 	height: 95px;
 	background: #313454;
+	position: relative;
+}
+.footer-text {
+	text-align: center;
+	padding-top: 30px;
+	padding-left: 800px;
+	padding-right: 800px;
+	color: #5b5c6a;
+	font-size: 14px;
+	line-height: 21px;
+}
+.footer-text p span {
+	color: #fff;
 }
